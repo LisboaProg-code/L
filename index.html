@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- meta light-theme -->
+    <meta name="color-scheme" content="light">
     <title>Luz que me traz paz</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="" ></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- section 1 -->
@@ -18,32 +18,32 @@
             <div class="slider" style="--quantity: 4">
 
                 <div class="item" style="--position:1">
-                    <!-- <img src="fotos-da-perfeicao/a-mulher-mais-linda-de-cabelo-liso.jpeg"> -->
-                     <img src="foto-teste.svg">
+                    <img src="fotos-da-perfeicao/a-mulher-mais-linda-de-cabelo-liso.jpeg">
                 </div>
 
                 <div class="item" style="--position:2">
-                    <!-- <img src="fotos-da-perfeicao/me-deixou-sem-palavras.jpeg"> -->
-                     <img src="foto-teste.svg">
+                    <img src="fotos-da-perfeicao/o-sorriso-mais-lindo-do-mundo.jpeg">
                 </div>
 
                 <div class="item" style="--position:3">
-                    <!-- <img src="fotos-da-perfeicao/o-sorriso-mais-lindo-do-mundo.jpeg"> -->
-                     <img src="foto-teste.svg">
+                    <img src="fotos-da-perfeicao/que-perfeicao.jpeg">
                 </div>
 
                 <div class="item" style="--position:4">
-                    <!-- <img src="fotos-da-perfeicao/que-perfeicao.jpeg"> -->
-                     <img src="foto-teste.svg">
+                    <img src="fotos-da-perfeicao/meu-deus-que-mulher.jpeg">
                 </div>
 
+            </div>
+
+            <div class="content">
+                <div class="model">
+                </div>
             </div>
 
          </div>
 
          <div class="conteiner-qualidades">
-            <!-- <h1>O que eu vejo em você</h1> -->
-             <h1 data-content="Nome">Nome</h1>
+             <h1 data-content="Lívia">Lívia</h1>
              <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing.
              </p>
@@ -66,7 +66,7 @@
 
      </div>
 
-     <div class="section2">
+     <div class="section2" id="trecho1">
 
         <div class="conteiner-msc-trecho">
 
@@ -78,18 +78,19 @@
 
             <div class="msc-trecho">
 
-                <audio src="###"></audio>
+                <audio src="trechos/trecho1.mp4"></audio>
 
-                <div class="player-progress" id="player-progress">
-                    <div class="progress" id="progress"></div>
-                    <div class="music-duration">
-                        <span id="current-time">0:00</span>
-                        <span id="duration">0:00</span>
+                <div class="conteiner-pai-display-music">
+                    <div class="player-progress">
+                        <div class="progress"></div>
+                        <div class="music-duration">
+                            <span class="current-time">0:00</span>
+                            <span class="duration">0:00</span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="player-controls">
-                    <i class="ri-play-large-fill" id="play" title="Play"></i>
+                    <div class="player-controls">
+                        <i class="ri-play-large-fill play-btn" title="Play"></i>
+                    </div>
                 </div>
 
                 <p>"Quando fecho meus olhos, sempre posso sentir os seus olhos e os seus lábios sorrindo pra mim"</p>
@@ -102,7 +103,7 @@
 
         <!-- trecho 2 -->
 
-     <div class="section2">
+     <div class="section2" id="trecho2">
 
         <div class="conteiner-msc-trecho">
 
@@ -114,22 +115,23 @@
 
             <div class="msc-trecho">
 
-                <audio src="###"></audio>
+                <audio src="trechos/trecho2.mp4"></audio>
 
-                <div class="player-progress" id="player-progress">
-                    <div class="progress" id="progress"></div>
-                    <div class="music-duration">
-                        <span id="current-time">0:00</span>
-                        <span id="duration">0:00</span>
+                <div class="conteiner-pai-display-music">
+                    <div class="player-progress">
+                        <div class="progress"></div>
+                        <div class="music-duration">
+                            <span class="current-time">0:00</span>
+                            <span class="duration">0:00</span>
+                        </div>
+                    </div>
+                    <div class="player-controls">
+                        <i class="ri-play-large-fill play-btn" title="Play"></i>
                     </div>
                 </div>
 
-                <div class="player-controls">
-                    <i class="ri-play-large-fill" id="play" title="Play"></i>
-                </div>
-
                 <p>"Nado nesses teus olhos, mar de inspiração"</p>
-                <p>"Tua boca, tua pele, teu cheiro é uma canção"</p>
+                <p>"Tua boca, tua pele, teu cheiro é canção"</p>
                 
             </div>
 
@@ -140,7 +142,7 @@
 
      <!-- trecho3 -->
 
-     <div class="section2">
+     <div class="section2" id="trecho3">
 
         <div class="conteiner-msc-trecho">
 
@@ -152,24 +154,25 @@
 
             <div class="msc-trecho">
 
-                <audio src="###"></audio>
+                <audio src="trechos/trecho3-arrumado.mp4"></audio>
 
-                <div class="player-progress" id="player-progress">
-                    <div class="progress" id="progress"></div>
-                    <div class="music-duration">
-                        <span id="current-time">0:00</span>
-                        <span id="duration">0:00</span>
+                <div class="conteiner-pai-display-music">
+                    <div class="player-progress">
+                        <div class="progress"></div>
+                        <div class="music-duration">
+                            <span class="current-time">0:00</span>
+                            <span class="duration">0:00</span>
+                        </div>
+                    </div>
+                    <div class="player-controls">
+                        <i class="ri-play-large-fill play-btn" title="Play"></i>
                     </div>
                 </div>
 
-                <div class="player-controls">
-                    <i class="ri-play-large-fill" id="play" title="Play"></i>
-                </div>
-
                 <p>"Eu vou cantar para ela"</p>
-                <p>"Quem sem ela eu não existo mais"</p>
+                <p>"Que sem ela eu não existo mais"</p>
                 <p>"Eu vou cantar pra ela"</p>
-                <p>"Que eu a sempre quero mais"</p>
+                <p>"Que eu sempre a quero mais"</p>
             </div>
 
 
@@ -179,7 +182,7 @@
 
      </div>
 
-     <div class="section2">
+     <div class="section2" id="trecho4">
 
         <div class="conteiner-msc-trecho">
 
@@ -191,18 +194,19 @@
 
             <div class="msc-trecho">
 
-                <audio src="###"></audio>
+                <audio src="trechos/trecho4-arrumado.mp4"></audio>
 
-                <div class="player-progress" id="player-progress">
-                    <div class="progress" id="progress"></div>
-                    <div class="music-duration">
-                        <span id="current-time">0:00</span>
-                        <span id="duration">0:00</span>
+                <div class="conteiner-pai-display-music">
+                    <div class="player-progress">
+                        <div class="progress"></div>
+                        <div class="music-duration">
+                            <span class="current-time">0:00</span>
+                            <span class="duration">0:00</span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="player-controls">
-                    <i class="ri-play-large-fill" id="play" title="Play"></i>
+                    <div class="player-controls">
+                        <i class="ri-play-large-fill play-btn" title="Play"></i>
+                    </div>
                 </div>
 
                 <p>"Eu vou dizer pra ela"</p>
@@ -217,7 +221,7 @@
 
      <!-- trecho5 -->
 
-     <div class="section2">
+     <div class="section2" id="trecho5">
 
         <div class="conteiner-msc-trecho">
 
@@ -229,18 +233,19 @@
 
             <div class="msc-trecho">
 
-                <audio src="###"></audio>
+                <audio src="trechos/trecho5.mp4"></audio>
 
-                <div class="player-progress" id="player-progress">
-                    <div class="progress" id="progress"></div>
-                    <div class="music-duration">
-                        <span id="current-time">0:00</span>
-                        <span id="duration">0:00</span>
+                <div class="conteiner-pai-display-music">
+                    <div class="player-progress">
+                        <div class="progress"></div>
+                        <div class="music-duration">
+                            <span class="current-time">0:00</span>
+                            <span class="duration">0:00</span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="player-controls">
-                    <i class="ri-play-large-fill" id="play" title="Play"></i>
+                    <div class="player-controls">
+                        <i class="ri-play-large-fill play-btn" title="Play"></i>
+                    </div>
                 </div>
 
                 <p>"Combustível para alma, minha inspiração"</p>
@@ -257,7 +262,13 @@
      <div class="footer">
          
          <div class="conteinerPaiFooter">
-            <div class="video-da-mulher-perfeita"><!-- se pá nem precisa, dps eu testo sem --></div>
+            <div class="video-da-mulher-perfeita">
+
+                <video width="360" height="640" autoplay loop muted>
+                    <source src="fotos-da-perfeicao/mulher-perfeita-de-trança.mp4" type="video/mp4">
+                </video>
+
+            </div>
             <div class="conteiner-mensagens-footer">
                 <h1>Título</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae veritatis dignissimos dolor pariatur, illo velit dolores deserunt fugit aperiam totam?</p>
