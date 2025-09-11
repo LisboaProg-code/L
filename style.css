@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+/* seção 1 */
+
+.section1{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+}
+
+/* carrosel */
+
+.banner{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .slider{
+    position: absolute;
+    width: 150px;
+    height: 210px;
+    top:20%;
+    left: calc(50% - 75px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 25s linear infinite;
+    z-index: 2;
+}
+
+@keyframes autoRun{
+    from{
+        transform: perspective(1000px) rotateX(-10deg) rotateY(0deg);
+    }
+    to{
+        transform: perspective(1000px) rotateX(-10deg) rotateY(360deg);
+    }
+}
+
+.banner .slider .item{
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: 
+        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity) * 1deg) ))
+        translateZ(300px)
+    ;
+}
+
+.banner .slider .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section1 .conteiner-qualidades h1{
+    font-size: 8rem;
+    line-height: 1em;
+    color: #41161f; /* rosa */
+    position: relative;
+}
+
+.section1 .conteiner-qualidades h1::after{
+    position: absolute;
+    inset: 0 0 0 0;
+    content: attr(data-content);
+    z-index: 2;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+}
+
+/* Qualidades/Elogios meus e amigas */
+
+.conteiner-qualidades{
+    height: 100%;
+    width: 70%;    
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---carrosel---- */
+
+/* separador/nome da musica */
+
+.conteiner-nome-musica{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-nome-musica h1{
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.conteiner-nome-musica h1::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    width: 50%;
+    height: 3px;
+    background-color: #d6d6d6;
+}
+
+/* section2 */
+
+.section2{
+    width: 100%;
+    height: 100%;
+    background: #d6d6d6;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+.conteiner-msc-trecho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.player-progress{
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0px 0px 15px;
+    height: 6px;
+    width: 30%;
+}
+
+.progress{
+    background-color: #212121;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width .1s linear;
+}
+
+.music-duration{
+    position: relative;
+    top: 100%;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-controls{
+    position: relative;
+    top: 15%;
+    left: 12%;
+    width: 200px;
+    padding-bottom: 15px;
+}
+
+.player-controls i{
+    font-size: 33px;
+    color: #666;
+    margin-right: 30px;
+    cursor: pointer;
+    user-select: none;
+    transition: all .3s ease;
+    position: relative;
+    top: 3px;
+}
+
+.player-controls i:hover{
+    filter: brightness(40%)
+}
+
+
+.msc-trecho{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.msc-trecho p{
+    width: 50%;
+    font-size: 1.3rem;
+    padding-top: 10px;
+    transform:translateX(3%);
+}
+
+
+/* --sections2-- */
+
+/* footer/section3 */
+
+.footer{
+    width: 100%;
+    height: 100%;
+    background: #d6d6d6;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+.conteinerPaiFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer .conteinerPaiFooter .conteiner-mensagens-footer{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.footer .conteinerPaiFooter .conteiner-mensagens-footer h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.footer .conteinerPaiFooter .conteiner-mensagens-footer p{
+    width: 50%;
+    font-size: 1.3rem;
+    padding-top: 10px;
+    transform:translateX(3%);
+
+}
