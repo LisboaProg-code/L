@@ -1,357 +1,38 @@
-/* seção 1 */
+trechos após o carrosel de fotos:
+    O seu sorriso de princesa que me apaixona cada vez mais
+    
+    Os seus olhos que me prende e me faz delirar
 
-.section1{
-    display: flex;
-    width: 100%;
-    height: 70vh;
-}
+    O seu cabelo, ah mais que cabelo... Lindo de todas as formas e penteados
 
-/* carrosel */
+    O seu humor e paixão por fofocas KAKKAKKA
 
-.banner{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
-}
+    A sua voz que me encanta toda vez, a cada áudio..
 
-.banner .slider{
-    position: absolute;
-    width: 150px;
-    height: 210px;
-    top:20%;
-    left: calc(50% - 75px);
-    transform-style: preserve-3d;
-    transform: perspective(1000px);
-    animation: autoRun 25s linear infinite;
-    z-index: 2;
-}
+    Seu estilo que parece uma modelo que sempre me impressiona e hipnotiza
 
-@keyframes autoRun{
-    from{
-        transform: perspective(600px) rotateX(-12deg) rotateY(0deg);
-    }
-    to{
-        transform: perspective(600px) rotateX(-12deg) rotateY(360deg);
-    }
-}
-
-.banner .slider .item{
-    position: absolute;
-    inset: 0 0 0 0;
-    transform: 
-        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity) * 1deg) ))
-        translateZ(250px)
-    ;
-}
-
-.banner .slider .item img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.section1 .conteiner-qualidades h1{
-    font-size: 8rem;
-    line-height: 1em;
-    color: #730220; /* rosa */
-    position: relative;
-    font-family: "ICA Rubrik", Arial, Helvetica, sans-serif;
-}
-
-.section1 .conteiner-qualidades h1::after{
-    position: absolute;
-    inset: 0 0 0 0;
-    content: attr(data-content);
-    z-index: 2;
-    -webkit-text-stroke: 2px #8c0739;
-    color: transparent;
-}
-
-.content{
-    position: absolute;
-    bottom: 0;
-    left: 10%;
-    transform: translatey(20%);
-    width: 80%;
-    height: 100%;
-    padding-bottom: 100px;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.model{
-    background-image: url(fotos-da-perfeicao/livia-pixelada-calca.png);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: 50% -100%;
-}
-
-/* Qualidades/Elogios meus e amigas */
-
-.conteiner-qualidades{
-    height: 100%;
-    width: 70%;    
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-}
+    Sua forma de falar muito, que combinando com todas as suas outras características me faz pensar que estou no paraíso
 
 
-/* ---carrosel---- */
+Trechos após o video:
+    "Não consigo calar-me, quando quem fala cá dentro de mim é o coração." Noites Brancas
 
-/* separador/nome da musica */
+    "Cada encontro é um capítulo que o destino escreve em nossas vidas." Noites Brancas
 
-.conteiner-nome-musica{
-    width: 100%;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    "Eu não sabia que o amor poderia ser assim. Eu não sabia que poderia ser tão forte, tão profundo. Eu não sabia que poderia ser tão real." Diário de uma Paixão
 
-.conteiner-nome-musica h1{
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    position: relative;
-    display: inline-block;
-    padding-bottom: 10px;
-    color: #730220;
-}
+    "Adoro quando você diz coisas fofas." Diário de uma Paixão
 
-.conteiner-nome-musica h1::after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 25%;
-    width: 50%;
-    height: 3px;
-    background-color: #bf6b92; /* azul/dourado */
-}
+    "Adoro seu estilo." Diário de uma Paixão
 
-/* section2 */
+    "Adoro nossa felicidade." Diário de uma Paixão
 
-.section2{
-    width: 100%;
-    height: 100%;
-    background: #d6d6d6;
-    display: flex;
-    margin-bottom: 30px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-}
-
-#trecho1{
-    /* background-image: url(fotos-da-perfeicao/que-perfeicao-horizontal.png); */
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    overflow: hidden;
-}
-
-#trecho2{
-    /* background-image: url(fotos-da-perfeicao/meu-deus-que-mulher-horizontal.png); */
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    overflow: hidden;
-}
-
-#trecho3{
-    /* background-image: url(fotos-da-perfeicao/a-mulher-mais-linda-horizontal-rework.jpeg); */
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 0% 0%;
-    overflow: hidden;
-}
-
-#trecho4{
-    /* background-image: url(fotos-da-perfeicao/o-sorriso-mais-lindo-horizontal.png); */
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    overflow: hidden;
-}
-
-#trecho5{
-    /* background-image: url(fotos-da-perfeicao/nos-dois-palhaco-horizontal.png); */
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 50% 55%;
-    overflow: hidden;
-}
+    "O pior destino é viver a minha vida sem você nela." Adoráveis Mulheres
 
 
-.conteiner-msc-trecho{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
+Ideia de fonte 
+    Poppins
 
-.conteiner-pai-display-music{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-}
+Background-color
+    Branco mas um pouco diferente. Pesquisar
 
-
-.player-progress{
-    background-color: #d6d6d6;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 0px 0px 15px;
-    height: 6px;
-    width: 30%;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
-}
-
-.progress{
-    background-color: #730220;
-    border-radius: 0px;
-    height: 100%;
-    width: 0%;
-    transition: width .3s ease-out;
-}
-
-.music-duration{
-    position: relative;
-    top: 100%;
-    font-size: 12px;
-    display: flex;
-    justify-content: space-between;
-    color: #bf6b92;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
-}
-
-.player-controls{
-    position: relative;
-    top: 15%;
-    left: 12%;
-    width: 200px;
-    padding-bottom: 15px;
-}
-
-.player-controls i{
-    font-size: 33px;
-    color: #bf6b92;
-    margin-right: 30px;
-    cursor: pointer;
-    user-select: none;
-    transition: all .3s ease;
-    position: relative;
-    top: 3px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-}
-
-.player-controls i:hover{
-    filter: brightness(40%)
-}
-
-.conteiner-pai-letra-trecho {
-    background-color: rgba(255, 255, 255, 0.2); 
-    backdrop-filter: blur(10px); 
-    -webkit-backdrop-filter: blur(10px); 
-    width: 50%;
-    padding: 10px 0px;
-    border-radius: 12px; 
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column; 
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-}
-
-#c1 p{
-    transform: translateX(0%);
-}
-
-
-.msc-trecho{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
-}
-
-.msc-trecho p{
-    font-family: "Fraunces", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    color: #730220;
-    width: 90%;
-    font-size: 1.3rem;
-    padding-top: 10px;
-    transform:translateX(6%);
-}
-
-
-/* --sections2-- */
-
-/* footer/section3 */
-
-.footer{
-    width: 100%;
-    height: 100%;
-    background: #d6d6d6;
-    display: flex;
-    margin-bottom: 20px;
-}
-
-
-.conteinerPaiFooter{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.video-da-mulher-perfeita{
-    transform: translateX(50%);
-}
-
-video{
-    border-radius: 25px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-}
-
-.footer .conteinerPaiFooter .conteiner-mensagens-footer{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-}
-
-.footer .conteinerPaiFooter .conteiner-mensagens-footer h1{
-    text-align: center;
-    font-size: 2.5rem;
-    color:#730220;
-}
-
-.footer .conteinerPaiFooter .conteiner-mensagens-footer p{
-    width: 50%;
-    height: 100%;
-    font-size: 1.2rem;
-    padding-top: 10px;
-    transform:translateX(3%);
-
-}
